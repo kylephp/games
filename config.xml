@@ -26,5 +26,5 @@
     </platform>
     <plugin name="cordova-plugin-admob-free" spec="^0.18.0" />
     <engine name="android" spec="^7.0.0" />
-    <preference name="phonegap-version" value="cli-6.5.0" />
+    <preference name="phonegap-version" value="cli-8.0.0" />
 </widget>
