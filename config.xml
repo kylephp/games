@@ -24,7 +24,9 @@
         <allow-intent href="itms:*" />
         <allow-intent href="itms-apps:*" />
     </platform>
+    <engine name="android" spec="~7.0.0" />
     <plugin name="cordova-plugin-admob-free" spec="^0.18.0" />
     <engine name="android" spec="^7.0.0" />
+    <engine name="ios" spec="~4.5.5" />
     <preference name="phonegap-version" value="cli-8.0.0" />
 </widget>
