@@ -2,7 +2,7 @@
 <widget android-versionCode="10001" id="com.kylelabs.watermaze3d" version="1.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
     <name>Water Maze 3D</name>
     <description>
-        A game designed with love by Kyle Hoang
+        Designed with love by Kyle Hoang
     </description>
     <author email="kyle.labs89@gmail.com" href="http://kylephp.github.io/">
        Kyle Labs
