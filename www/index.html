@@ -1,46 +1,85 @@
-<!doctype html>
+<!DOCTYPE html>
+<html>
 <head>
-    <title>Water Maze 3D</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
-    <meta name="apple-mobile-web-app-capable" content="yes" />
-    <meta name="mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-status-bar-style" content="black">
-    <meta charset="utf-8">
-    <style>
-        html,body {
-            background: #fff;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            text-align: center;
-            height: 100%;
-            padding: 0;
-            margin: 0;
-            font-size: 18px;
-            font-family: Monoid,monospace;
-            overflow: hidden;
-        }
-        * {
-            user-select: none;
-        }
-        h1{
-            padding: 0;
-            margin: 0;
-            color: #06C;
-        }
-        footer{
-            color: #c60;
-        }
-    </style>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"/>
+  <title></title>
+  <style>
+  html,
+  body {
+    height: 100%;
+  }
+
+  body {
+    background: #222;
+    font-size: 30px;
+    font-family: 'Lucida Console', Monaco, monospace;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .wrapper {
+    max-width: 640px;
+    max-height: 960px;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .wrapper:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: linear-gradient(0deg, transparent 24%, rgba(22,22,22, .25) 25%, rgba(22,22,22, .25) 26%, transparent 27%, transparent 74%, rgba(22,22,22, .25) 75%, rgba(22,22,22, .25) 76%, transparent 77%, transparent), linear-gradient(90deg, transparent 24%, rgba(22,22,22, .25) 25%, rgba(22,22,22, .25) 26%, transparent 27%, transparent 74%, rgba(22,22,22, .25) 75%, rgba(22,22,22, .25) 76%, transparent 77%, transparent);
+    background-size: 15px 15px;
+  }
+
+  canvas {
+    display: block;
+    outline: 1px solid white;
+    max-width: 100%;
+    max-height: 100%;
+    width: auto;
+    height: auto;
+    background: #222;
+    background-image: linear-gradient(0deg, transparent 24%, rgba(204, 204, 204, .25) 25%, rgba(204, 204, 204, .25) 26%, transparent 27%, transparent 74%, rgba(204, 204, 204, .25) 75%, rgba(204, 204, 204, .25) 76%, transparent 77%, transparent), linear-gradient(90deg, transparent 24%, rgba(204, 204, 204, .25) 25%, rgba(204, 204, 204, .25) 26%, transparent 27%, transparent 74%, rgba(204, 204, 204, .25) 75%, rgba(204, 204, 204, .25) 76%, transparent 77%, transparent);
+    background-size: 15px 15px;
+  }
+
+  [hidden] {
+    display: none !important;
+  }
+
+  #uiScenes {
+    position: absolute;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    width: 1px;
+    margin: -1px;
+    padding: 0;
+    border: 0;
+    z-index: -10;
+  }
+  </style>
 </head>
 <body>
-<div>
-    <h1 id="$t"></h1>
-    <canvas id="c"></canvas>
-    <footer id="$f"></footer>
+<div class="wrapper" role="application">
+  <canvas width="640" height="960"></canvas>
 </div>
+<div id="uiScenes"></div>
+<input type="file" accept="audio/*" tabindex="-1" hidden id="uploadFile">
+
 <script src="cordova.js"></script>
-<script src="js/index.js"></script>
-<script src="js/b.js"></script>
+<script src="ads.js"></script>
+<script src="index.js"></script>
 </body>
 </html>
+<body>
