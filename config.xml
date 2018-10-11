@@ -2,7 +2,7 @@
 <widget android-versionCode="10002" id="com.kylelabs.audiodash" version="1.0.2" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
     <name>Audio Dash</name>
     <description>
-        Designed with love by Kyle Hoang
+        Designed by Kyle with love
     </description>
     <author email="kyle.labs89@gmail.com" href="http://kylephp.github.io/">
        Kyle Labs
